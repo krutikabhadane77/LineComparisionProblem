@@ -96,24 +96,23 @@ public class UsingOOPConcepts {
             obj.set_X2(9);
             obj.set_Y1(5);
             obj.set_y2(9);
-            System.out.println("The co-ordinates are : \n" + obj.toString());
+            System.out.println("The co-ordinates are : " + obj.toString());
             int length1 = ((obj.getX2() - obj.getX1()) ^ 2 + (obj.getY2() - obj.getY1()) ^ 2);
             int length2 = ((obj.get_X2() - obj.get_X1()) ^ 2 + (obj.get_Y2() - obj.get_Y1()) ^ 2);
-            System.out.println("\nLength of the first line = " + length1);
-            System.out.println("Length of second line = " + length2);
+            System.out.println("Length of 1st line = " + length1);
+            System.out.println("Length of 2nd line = " + length2);
 
           
             //Check equality of two lines
             String l1 = Double.toString(length1);
             String l2 = Double.toString(length2);
             //Comparing two lines
-            int comp = l1.compareTo(l2);
-            if (comp > 0)
-                System.out.println("\nLine-1 is longer than Line-2");
-            else if (comp < 0)
-                System.out.println("\nLine-2 is longer than Line-1");
+            if (l1.compareTo(l2)>0)
+                System.out.println("Line1 is longer than line2");
+            else if (l1.compareTo(l2)==0)
+                System.out.println("Line1 is equal to line2");
             else
-                System.out.println("\nLine-1 is equal to Line-2");
+                System.out.println("Line2 is longer than line1");
         }
     }
 
