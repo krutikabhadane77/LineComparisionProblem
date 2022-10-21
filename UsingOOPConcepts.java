@@ -10,8 +10,6 @@ public class UsingOOPConcepts {
     private int _y1;
     private int _y2;
 
-//for Line1...
-
     public int getX1() {
         return x1;
     }
@@ -43,7 +41,7 @@ public class UsingOOPConcepts {
     public void setY2(int y2) {
         this.y2 = y2;
     }
-    // for Line2..
+    
     public int get_X1() {
         return _x1;
     }
@@ -92,10 +90,10 @@ public class UsingOOPConcepts {
             UsingOOPConcepts obj = new UsingOOPConcepts();
             obj.setX1(4);
             obj.setX2(6);
-            obj.setY1(3);
+            obj.setY1(4);
             obj.setY2(8);
             obj.set_X1(8);
-            obj.set_X2(10);
+            obj.set_X2(9);
             obj.set_Y1(5);
             obj.set_y2(9);
             System.out.println("The co-ordinates are : \n" + obj.toString());
@@ -104,11 +102,11 @@ public class UsingOOPConcepts {
             System.out.println("\nLength of the first line = " + length1);
             System.out.println("Length of second line = " + length2);
 
-            //to check lines are equal or not as well as Compare them...
-
+          
+            //Check equality of two lines
             String l1 = Double.toString(length1);
             String l2 = Double.toString(length2);
-
+            //Comparing two lines
             int comp = l1.compareTo(l2);
             if (comp > 0)
                 System.out.println("\nLine-1 is longer than Line-2");
